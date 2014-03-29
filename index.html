@@ -52,11 +52,11 @@
 
     <div id="menu">
         <div class="pure-menu pure-menu-open">
-            <a href=".">HUIWEN</a>
+            
 
             <ul>
-                <li ng-repeat="item in menu" ng-class="{ 'menu-item-divided pure-menu-selected': $index == selectedIndex }" ng-click="itemClicked($index)">
-                <a ng-href="#/{{item}}">{{ item }}</a>
+                <li ng-repeat="item in menu" ng-class="{ 'menu-item-divided pure-menu-selected': $index == selectedIndex&& selectedItem == item }" ng-click="itemClicked($index)">
+                <a ng-class="{'menu-item-divided': $index == 1}" ng-href="#/{{item}}">{{ item }}</a>
                 </li>
 
             </ul>
@@ -64,12 +64,12 @@
     </div>
 
     <div id="main">
-        <div class="header">
+<!--         <div class="header">
             <h1>Page Title</h1>
             <h2>A subtitle for your page goes here</h2>
         </div>
 
-        <div class="content">
+        <div class="content"> -->
             <div ng-view></div>
         <!-- 
             <h2 class="content-subhead">How to use this layout</h2>
