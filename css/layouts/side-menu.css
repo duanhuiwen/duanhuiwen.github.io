@@ -1,6 +1,12 @@
+@font-face {
+font-family: 'thin';
+src: url("http://duanhuiwen.github.io/css/Vegur/Vegur-L_0600.otf") format("opentype");
+}
+
+
 body {
     color: #777;
-    font-family: "din";
+    font-family: 'thin';
 }
 
 .pure-img-responsive {
