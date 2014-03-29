@@ -56,7 +56,7 @@
 
             <ul>
                 <li ng-repeat="item in menu" ng-class="{ 'menu-item-divided pure-menu-selected': $index == selectedIndex }" ng-click="itemClicked($index)">
-                <a ng-href="{{item}}">{{ item }}</a>
+                <a ng-href="#/{{item}}">{{ item }}</a>
                 </li>
 
             </ul>
