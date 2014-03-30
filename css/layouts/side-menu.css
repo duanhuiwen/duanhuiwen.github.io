@@ -252,9 +252,12 @@ Hides the menu at `48em`, but modify this based on your app's needs.
     }
 }
 
-
-img { height:10px; padding:0 5px 5px 5p;margin:0 10px 10px 0;text-decoration:none;display:inline-block;border-radius:3px; }
-.icons img { height:10px; padding:0 5px 5px 5p;margin:0 10px 10px 0;text-decoration:none;display:inline-block;border-radius:3px; }
+img.icons {max-width: 40px;max-height: 40px; margin:0 5px 5px 0;display:inline-block;border-radius:3px; }
+img.icons:hover
+{
+opacity:0.5;
+filter:alpha(opacity=100); /* For IE8 and earlier */
+}
 p{
     font-family: disco,Verdana ,Helvetica, Arial, sans-serif;
     font-weight: 570;
