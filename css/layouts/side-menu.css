@@ -1,12 +1,19 @@
-@font-face {
-font-family: 'thin';
-src: url("http://duanhuiwen.github.io/css/Vegur/Vegur-L_0600.otf") format("opentype");
+@font-face
+{
+font-family: 'disco';
+src: url('../font/Quicksand-Regular.otf');
+/*font-weight:900;*/
 }
-
+@font-face
+{
+font-family: 'Aaargh';
+src: url('../font/Aaargh.ttf');
+/*font-weight:900;*/
+}
 
 body {
     color: #777;
-    font-family: 'thin';
+    
 }
 
 .pure-img-responsive {
@@ -52,12 +59,13 @@ The content `<div>` is where all your content goes.
 .content {
     margin: 0 auto;
     padding: 0 2em;
-    max-width: 800px;
+    max-width: 900px;
     margin-bottom: 50px;
     line-height: 1.6em;
 }
 
 .header {
+     font-family: Aaargh,Verdana ,Helvetica, Arial, sans-serif;
      margin: 0;
      color: #333;
      text-align: center;
@@ -65,15 +73,15 @@ The content `<div>` is where all your content goes.
      border-bottom: 1px solid #eee;
  }
     .header h1 {
-        margin: 0.2em 0;
+        margin: 0.5em 0;
         font-size: 3em;
-        font-weight: 300;
+        font-weight: 500;
     }
      .header h2 {
         font-weight: 300;
         color: #ccc;
         padding: 0;
-        margin-top: 0;
+        margin-top: 1.5em;
     }
 
 .content-subhead {
@@ -90,6 +98,7 @@ appears on the left side of the page.
 */
 
 #menu {
+    font-family: Verdana ,Helvetica, Arial, sans-serif;
     margin-left: -150px; /* "#menu" width */
     width: 150px;
     position: fixed;
@@ -137,8 +146,7 @@ appears on the left side of the page.
     /*
     This styles the selected menu item `<li>`.
     */
-    #menu .pure-menu-selected,
-    #menu .pure-menu-heading {
+    #menu .pure-menu-selected{
         background: #1f8dd6;
     }
         /*
@@ -242,4 +250,17 @@ Hides the menu at `48em`, but modify this based on your app's needs.
     #layout.active .menu-link {
         left: 150px;
     }
+}
+
+
+img { height:10px; padding:0 5px 5px 5p;margin:0 10px 10px 0;text-decoration:none;display:inline-block;border-radius:3px; }
+.icons img { height:10px; padding:0 5px 5px 5p;margin:0 10px 10px 0;text-decoration:none;display:inline-block;border-radius:3px; }
+p{
+    font-family: disco,Verdana ,Helvetica, Arial, sans-serif;
+    font-weight: 570;
+    color:gray;
+}
+.one-grid{
+
+    padding: 3em 1em;
 }

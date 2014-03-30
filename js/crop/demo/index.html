@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>jQuery-Fakecrop Sample</title>
+	<style type="text/css">
+		.wrapper { width:960px;margin:0 auto; }
+		.container { width:800px;maring:0 auto; }
+		.container a { padding:0 5px 5px 5p;margin:0 10px 10px 0;text-decoration:none;display:inline-block;border:1px solid #DDD;border-radius:3px; }
+		img { border:0;height:100px; }
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+
+
+			<script>
+				// This function just write 10 images to the document where ever executed
+				// since we don't want to repeat ourselves
+				function makeImages(amount) {
+					var i = 1, src = '';
+					for (var i=1;i<amount+1;i++) {
+						src = 'img/' + i + '.jpg';
+						document.write('<a href="' + src + '"><img src="' + src + '" alt="Image ' + i + '" /></a>' );
+					}	
+				}
+				makeImages(10);
+			</script>
+
+		<div id="fakecrop-fill" class="container">
+			<script>makeImages(10);</script>
+		</div>
+		
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="../jquery-1.7.2.min.js">\x3C/script>')</script>
+	<script src="../fakecrop/jquery.fakecrop.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('#fakecrop-fill img').fakecrop();
+			$('#fakecrop img').fakecrop({ fill : false });
+		});
+	</script>	
+</body>
+</html>

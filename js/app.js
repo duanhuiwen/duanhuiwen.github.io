@@ -8,9 +8,9 @@ angularSite.config(['$routeProvider',
     $routeProvider.
       when('/About', {
         templateUrl: 'partials/about.html',
-        controller: 'AboutController'
+       // controller: 'AboutController'
       }).
-      when('/Work', {
+      when('/Projects', {
         templateUrl: 'partials/work.html',
         controller: 'WorkController'
       }).
@@ -18,11 +18,7 @@ angularSite.config(['$routeProvider',
         templateUrl: 'partials/work-detail.html',
         controller: 'WorkdetailController'
       }).
-      when('/Contact', {
-        templateUrl: 'partials/contact.html',
-        controller: 'ContactController'
-      }).
       otherwise({
-        redirectTo: '/about'
+        redirectTo: '/'
       });
   }]);
