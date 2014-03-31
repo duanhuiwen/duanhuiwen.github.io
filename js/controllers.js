@@ -1,12 +1,12 @@
 var siteController = angular.module('siteController', []);
 
 
-siteController.controller('NavController',['$scope','$routeParams',function($scope,$routeParams){
+siteController.controller('NavController',['$scope','$location','$routeParams',function($scope,$location,$routeParams){
 $scope.menu = ["HUIWEN","About", "Projects", "Photography"];
 
   $scope.selectedIndex = 0; // Whatever the default selected index is, use -1 for no selection
   
-  
+  console.log($location.path());
   $scope.itemClicked = function ($index) {
     $scope.selectedIndex = $index;
     $scope.selectedItem = $scope.menu[$index];
