@@ -1,0 +1,117 @@
+{
+   "projects":[
+      {
+         "id": 10,
+         "time":"2013.10 - 2014.6",         
+         "shortName": "Data analysis and visualization",
+         "fullName": "Data analysis and visualization",
+         "img": "img/projects/all/rovio.png",
+         "startDate": "2013.10",
+         "endDate": "2014.5",
+         "location": "Espoo, Finland",
+         "organization": "Rovio Entertainment"
+      
+      },
+      {
+         "id": 9,
+         "time":"2013.9 - 2013.12",         
+         "shortName": "OpenStack Elastic Scaling",
+         "fullName": "OpenStack Elastic Scaling",
+         "img": "img/projects/all/openstack.png",
+         "startDate": "2013.9",
+         "endDate": "2013.12",
+         "location": "Espoo, Finland",
+         "organization": "Mobile Computing course work"
+      
+      },
+      {
+         "id": 8,
+         "time":"2013.9 - 2013.12",         
+         "shortName": "Experiment on Youtube CDN",
+         "fullName": "Experiment on Youtube Content Delivery Network",
+         "img": "img/projects/all/youtubecdn.png",
+         "startDate": "2013.9",
+         "endDate": "2013.12",
+         "location": "Espoo, Finland",
+         "organization": "Computer Networks II course work"
+      
+      },
+      {
+         "id": 5,
+         "time":"2012.5 – 2012.9",         
+         "shortName": "CASS",
+         "fullName": "Contextual Activity Sampling System",
+         "img": "img/projects/all/cass.jpg",
+         "startDate": "2012.5",
+         "endDate": "2012.9",
+         "location": "Espoo, Finland",
+         "organization": "Helsinki Metroplia UAS School of ICT"      
+      },
+      {
+         "id": 6,
+         "time":"2012.9 – 2013.2",         
+         "shortName": "3D Relics",
+         "fullName": "3D Relics",
+         "img": "img/projects/all/3drelics.jpg",
+         "startDate": "2012.9",
+         "endDate": "2013.2",
+         "location": "Espoo, Finland",
+         "organization": "Helsinki Metroplia UAS School of ICT"      
+      },     
+      {
+         "id": 7,
+         "time":"2013.3 – 2013.5",         
+         "shortName": "SPAGU",
+         "fullName": "Smart Spaces for Personal Guidance",
+         "img": "img/projects/all/spagu.png",
+         "startDate": "2013.3",
+         "endDate": "2013.5",
+         "location": "Espoo, Finland",
+         "organization": "Helsinki Metroplia UAS School of ICT"      
+      },
+      {
+         "id": 4,
+         "time":"2012.9 –  2012.12 ",         
+         "shortName": "4Homework",
+         "fullName": "4Homework",
+         "img": "img/projects/all/4homework.png",
+         "startDate": "2012.9",
+         "endDate": "2012.12",
+         "location": "Espoo, Finland",
+         "organization": "BecomingSparq"      
+      },
+      {
+         "id": 2,
+         "time":"2011.9 –  2012.3 ",         
+         "shortName": "Kamazon",
+         "fullName": "Kamazon Online Book store",
+         "img": "img/projects/all/kamazon.png",
+         "startDate": "2011.1",
+         "endDate": "2011.3",
+         "location": "Espoo, Finland",
+         "organization": "Internet programming course work"      
+      },
+      {
+         "id": 1,
+         "time":"2011.1 –  2011.3 ",         
+         "shortName": "AutoGaz",
+         "fullName": "AutoGaz",
+         "img": "img/projects/all/autogaz.png",
+         "startDate": "2011.1",
+         "endDate": "2011.3",
+         "location": "Riga, Latvia",
+         "organization": "AutoGaz"      
+      },
+      {
+         "id": 3,
+         "time":"2013.3 –  2013.5 ",         
+         "shortName": "MetroMap",
+         "fullName": "MetroMap",
+         "img": "img/projects/all/metromap.png",
+         "startDate": "2013.3",
+         "endDate": "2013.5",
+         "location": "Espoo, Finland",
+         "organization": "Media Project course work"      
+      }
+   ]
+}

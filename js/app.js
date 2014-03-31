@@ -1,6 +1,7 @@
 var angularSite = angular.module('angularSite', [
   'ngRoute',
-  'siteController'
+  'siteController',
+  'siteDirectives'
 ]);
  
 angularSite.config(['$routeProvider',
@@ -11,12 +12,16 @@ angularSite.config(['$routeProvider',
        // controller: 'AboutController'
       }).
       when('/Projects', {
-        templateUrl: 'partials/work.html',
+        templateUrl: 'partials/projects.html',
         controller: 'WorkController'
       }).
-      when('/Work/:workName', {
-        templateUrl: 'partials/work-detail.html',
+      when('/Projects/:workName', {
+        templateUrl: 'partials/project-detail.html',
         controller: 'WorkdetailController'
+      }).
+      when('/Photography', {
+        templateUrl: 'partials/photo.html',
+        
       }).
       otherwise({
         redirectTo: '/'

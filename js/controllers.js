@@ -21,10 +21,24 @@ $scope.menu = ["HUIWEN","About", "Projects", "Photography"];
 
 siteController.controller('WorkController', ['$scope', '$http',
   function ($scope, $http) {
-    $http.get('./data/works.json').success(function(data) {
-      $scope.works = data;
+    $scope.indicator = "-id";
+    $http.get('./data/projects.json').success(function(data) {
+    $scope.projects = data.projects;
+    //  console.log(data.projects.length)
     });
- 
+
+/*    $scope.$watch('project', function(newProject) {
+        if(newProject.id == project.length){
+          $('#fakecrop-fill img').fakecrop();
+          console.log(newProject.id );
+        }
+    });*/
+
+/*    $(document).ready(function () {
+      $('#fakecrop-fill img').fakecrop();
+      console.log("doc ready");
+    });
+  */
     
   }]);
  
