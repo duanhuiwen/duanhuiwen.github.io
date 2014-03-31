@@ -6,7 +6,7 @@ $scope.menu = ["HUIWEN","About", "Projects", "Photography"];
 
   $scope.selectedIndex = 0; // Whatever the default selected index is, use -1 for no selection
   
-  console.log($location.path());
+  console.log("path:"+$location.path());
   $scope.itemClicked = function ($index) {
     $scope.selectedIndex = $index;
     $scope.selectedItem = $scope.menu[$index];
