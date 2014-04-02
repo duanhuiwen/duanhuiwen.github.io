@@ -8,10 +8,10 @@ var angularSite = angular.module('angularSite', [
 angularSite.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
-      when('/', {
+/*      when('/', {
         templateUrl: 'partials/main.html',        
        // controller: 'AboutController'
-      }).
+      }).*/
       when('/About', {
         templateUrl: 'partials/about.html',
        // controller: 'AboutController'
