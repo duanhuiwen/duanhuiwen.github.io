@@ -2,6 +2,7 @@
    "projects":[
       {
          "id": 10,
+         "url":"partials/projects/10.html",
          "time":"2013.10 - 2014.6",         
          "shortName": "Data analysis and visualization",
          "fullName": "Data analysis and visualization",
@@ -14,6 +15,7 @@
       },
       {
          "id": 9,
+         "url":"partials/projects/9.html",
          "time":"2013.9 - 2013.12",         
          "shortName": "OpenStack Elastic Scaling",
          "fullName": "OpenStack Elastic Scaling",
@@ -26,6 +28,7 @@
       },
       {
          "id": 8,
+         "url":"partials/projects/8.html",
          "time":"2013.9 - 2013.12",         
          "shortName": "Experiment on Youtube CDN",
          "fullName": "Experiment on Youtube Content Delivery Network",
@@ -38,6 +41,7 @@
       },
       {
          "id": 5,
+         "url":"partials/projects/5.html",
          "time":"2012.5 – 2012.9",         
          "shortName": "CASS",
          "fullName": "Contextual Activity Sampling System",
@@ -49,6 +53,7 @@
       },
       {
          "id": 6,
+         "url":"partials/projects/6.html",
          "time":"2012.9 – 2013.2",         
          "shortName": "3D Relics",
          "fullName": "3D Relics",
@@ -60,6 +65,7 @@
       },     
       {
          "id": 7,
+         "url":"partials/projects/7.html",
          "time":"2013.3 – 2013.5",         
          "shortName": "SPAGU",
          "fullName": "Smart Spaces for Personal Guidance",
@@ -71,6 +77,7 @@
       },
       {
          "id": 4,
+         "url":"partials/projects/4.html",
          "time":"2012.9 –  2012.12 ",         
          "shortName": "4Homework",
          "fullName": "4Homework",
@@ -82,6 +89,7 @@
       },
       {
          "id": 2,
+         "url":"partials/projects/2.html",
          "time":"2011.9 –  2012.3 ",         
          "shortName": "Kamazon",
          "fullName": "Kamazon Online Book store",
@@ -93,6 +101,7 @@
       },
       {
          "id": 1,
+         "url":"partials/projects/1.html",
          "time":"2011.1 –  2011.3 ",         
          "shortName": "AutoGaz",
          "fullName": "AutoGaz",
@@ -104,6 +113,7 @@
       },
       {
          "id": 3,
+         "url":"partials/projects/3.html",
          "time":"2013.3 –  2013.5 ",         
          "shortName": "MetroMap",
          "fullName": "MetroMap",

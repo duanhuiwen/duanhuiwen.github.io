@@ -1,0 +1,57 @@
+{
+   "projects":[
+      {
+         "id": 1,
+         "url":"partials/projects/10.html",
+         "time":"2013.10 - 2014.6",         
+         "shortName": "Data analysis and visualization",
+         "fullName": "Data analysis and visualization",
+         "img": "img/projects/all/rovio.png",
+         "startDate": "2013.10",
+         "endDate": "2014.5",
+         "location": "Espoo, Finland",
+         "organization": "Rovio Entertainment"
+      
+      },
+      {
+         "id": 12,
+         "url":"partials/projects/10.html",
+         "time":"2013.10 - 2014.6",         
+         "shortName": "Data analysis and visualization",
+         "fullName": "Data analysis and visualization",
+         "img": "img/projects/all/rovio.png",
+         "startDate": "2013.10",
+         "endDate": "2014.5",
+         "location": "Espoo, Finland",
+         "organization": "Rovio Entertainment"
+      
+      },
+      {
+         "id": 10,
+         "url":"partials/projects/10.html",
+         "time":"2013.10 - 2014.6",         
+         "shortName": "Data analysis and visualization",
+         "fullName": "Data analysis and visualization",
+         "img": "img/projects/all/rovio.png",
+         "startDate": "2013.10",
+         "endDate": "2014.5",
+         "location": "Espoo, Finland",
+         "organization": "Rovio Entertainment"
+      
+      },
+      {
+         "id": 10,
+         "url":"partials/projects/10.html",
+         "time":"2013.10 - 2014.6",         
+         "shortName": "Data analysis and visualization",
+         "fullName": "Data analysis and visualization",
+         "img": "img/projects/all/rovio.png",
+         "startDate": "2013.10",
+         "endDate": "2014.5",
+         "location": "Espoo, Finland",
+         "organization": "Rovio Entertainment"
+      
+      },            
+   ]
+
+}

@@ -256,7 +256,9 @@ Hides the menu at `48em`, but modify this based on your app's needs.
         left: 150px;
     }
 }
-img.about{border-radius:10px;}
+
+
+img.about{border-radius:5px;}
 img.icons {
     max-width: 30px;
     max-height: 40px; 
@@ -280,7 +282,10 @@ p{
 
     padding: 3em 1em;
     left:0px;
-    height: 400px;
+    height: auto;
+}
+div.one-grid p{
+    margin-top: 0px;
 }
 
 
@@ -298,7 +303,8 @@ p{
 
 div.image-list
 {
-  width: 250px;
+  min-width: 100px;
+  max-width: 250px;
   height: 180px;
   overflow: hidden;
 
