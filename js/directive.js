@@ -12,9 +12,14 @@ angular.module('siteDirectives', [])
 		controller: function($scope) {
 			//console.log("$scope.project.id:"+$scope.project.id);
 			if($scope.project.id == 1){
+				jQuery("img.lazy").lazy({
+			        effect: "fadeIn",
+			        effectTime: 1500
+			    });
 				$('div.image-list img').centerImage();
 				//$('div.image-list img').fakecrop();
-				console.log('ready');
+				console.log('controller ready');
+
 			}
 
 
@@ -22,6 +27,18 @@ angular.module('siteDirectives', [])
 		templateUrl: 'partials/directives/projectBox.html'
 	};
 })
+.
+directive('lazy', function($timeout) {
+              return {
+                restrict: 'C',
+                link: function (scope, elm, attrs) {
+                    $(elm).lazy({
+				        effect: "fadeIn",
+				        effectTime: 1500
+				    });
+                }
+              }
+            });
 
 
     

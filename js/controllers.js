@@ -33,6 +33,7 @@ siteController.controller('WorkController', ['$scope', '$http',
     //  console.log(data.projects.length)
     });
 
+
 /*    $scope.$watch('project', function(newProject) {
         if(newProject.id == project.length){
           $('#fakecrop-fill img').fakecrop();
@@ -64,7 +65,7 @@ siteController.controller('PhotoController', ['$scope', '$http',
       $scope.photos = data.photos;
     });
  
-    
+
   }]);
 
 
