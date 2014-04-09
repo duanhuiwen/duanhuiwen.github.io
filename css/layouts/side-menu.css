@@ -59,11 +59,11 @@ This is the parent `<div>` that contains the menu and the content area.
             left: 150px;
         }
 /*
-The content `<div>` is where all your content goes.
+The content `<div>` is where all content goes.
 */
 .content {
     margin: 0 auto;
-    padding: 0 2em;
+    padding: 0;
     max-width: 900px;
     margin-bottom: 50px;
     line-height: 1.6em;
@@ -280,7 +280,7 @@ p{
 }
 .one-grid{
 
-    padding: 3em 1em;
+    padding: 3em 0em;
     left:0px;
     height: auto;
 }
@@ -322,16 +322,57 @@ p.project-title
   
 }
 
+
+
+a:link,
+a:visited,
+a:active {
+    
+    color:  #777;
+}
+
+
+a:hover {
+    
+    color:  #000;
+}
+
+
 .project-title a:link,
 .project-title a:visited,
 .project-title a:active {
     text-decoration: none;
-    color:  #777;
+    
 }
 
 
 .project-title a:hover {
     text-decoration: none;
-    color:  #000;
+    
 }
 
+
+.title {
+     font-family: Aaargh,Verdana ,Helvetica, Arial, sans-serif;
+     
+     color: #333;
+     
+     padding: 2.5em 0em 0;
+     border-bottom: 1px solid #eee;
+ }
+ .title h1 {
+        margin: 1em 0;
+        line-height: 70%;
+        font-size: 2em;
+        font-weight: 500;
+    }
+.projectDetails{
+
+        font-family: karla, disco,Verdana ,Helvetica, Arial, sans-serif;
+   
+        color:gray;
+}
+.keywords{
+    font-size: 0.8em;
+    font-style: italic;
+}

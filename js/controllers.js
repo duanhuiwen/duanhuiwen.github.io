@@ -25,7 +25,7 @@ $scope.menu = ["HUIWEN","About", "Projects", "Photography"];
 
 
 
-siteController.controller('WorkController', ['$scope', '$http',
+siteController.controller('ProjectController', ['$scope', '$http',
   function ($scope, $http) {
     $scope.indicator = "-id";
     $http.get('./data/projects.json').success(function(data) {
@@ -33,7 +33,7 @@ siteController.controller('WorkController', ['$scope', '$http',
     //  console.log(data.projects.length)
     });
 
-
+  }]);
 /*    $scope.$watch('project', function(newProject) {
         if(newProject.id == project.length){
           $('#fakecrop-fill img').fakecrop();
@@ -47,6 +47,11 @@ siteController.controller('WorkController', ['$scope', '$http',
     });
   */
     
+siteController.controller('ProjectDetailController', ['$scope', '$http', '$routeParams',
+  function ($scope, $http, $routeParams) {
+    console.log('here!');
+    $scope.templateUrl = "partials/projects/"+$routeParams.projectId+".html";
+
   }]);
  
 

@@ -1,0 +1,141 @@
+<div class="title">
+    <h1>OpenStack Elastic Scaling</h1>
+
+    <p class="right">2013.10 - 2013.11 | Espoo, Finland</p>
+
+
+</div>
+
+		
+<div class="projectDetails">
+<p class="keywords">
+	Key words: Node.js, Python, OpenStack, Elastic Cloud.
+
+</p>
+					<p>
+						One of the main motivations for cloud computing is elastic scaling. In this project, I worked in a team of two. The goal is to deploy a simple service backend onto a cloud infrastructure, measure the scalability of the service in different deployment models. We use the OpenStack cloud (IaaS) provided by the research group of Aalto University. The ready­made web service backend is implemented onto node.js platform. In order to create more
+complex deployments, automate the provisioning of virtual machines, and to reach the higher
+grades, we also created our own software onto node.js and programmatically
+access the cloud platform. </p>
+
+
+					
+<br>
+
+
+<p><b>Project goals:</b></p>
+<ul>
+<li>Implement a script that makes HTTP requests to the password breaker service( source code provided by the research group) with a number of frequencies (requests / minute) and logs the response times for each query. </li>
+
+<li>Implement and deploy a load balancer using the node­http­proxy
+(https://github.com/nodejitsu/node­http­proxy) package. The purpose of the balancer is to
+relay the requests to multiple back­end processes.</li>
+
+<li>Performance measurement of different deployment approaches:</li>
+<ol>
+<li>Deploy one backend process that runs the hash breaker on a single VM instance. </li>
+<li>Deploy three back­end processes to a same VM and use the load balancer as the
+service front end.</li>
+<li>Deploy three VMs and run one process per
+VM. Use the load balancer to distribute the requests between the backend processes.</li>
+<li>Enhance the load balancer to automatically boot and delete VM instances based on the
+service load. </li>
+</ol>
+</ul>
+
+<p><b>
+	
+	Tools and technology:
+
+</b></p>
+
+
+
+<ul>
+<li> Node.js as web server. </li>
+<li>Python script running on Linux server.</li>
+<li>Nova API for elastic computing. </li>
+<li> Matlab for data visualization. </li>
+
+ 
+</ul>
+
+<p><b>
+	
+	Results:
+
+</b></p>
+	<div class="pure-g-r">
+		<div class="pure-u-1">
+				<p>Deployment 1.</p>
+				<img src="./img/projects/9/p1.png"></img>
+				
+					<ul>
+					<li> VM_2 runs the pw_breaker.js</li>
+					<li> VM_3 sends requests to VM_2</li>
+					</ul>
+			The request is timeouted (no response in
+			30s) when the frequency reaches 19 req/ min.
+
+<br><br>
+
+
+							<p>Deployment 2.</p>
+				<img src="./img/projects/9/p2.png" ></img><p>
+			<ul>
+			<li> M_1 runs load balancer</li>
+			<li> VM_1 runs 3 pw_breaker.js processes</li>
+			<li>VM_2 sends requests to VM_1 The request is timeouted (no response in 30s) when the frequency reaches 25 req/ min.</li>
+			</ul>
+			The request is timeouted (no response in
+			30s) when the frequency reaches 25
+			req/ min.
+			<br><br>
+
+					<p>Deployment 3.</p>
+				<img src="./img/projects/9/p3.png"></img><p>
+			<ul>
+			<li> VM_1 runs load balancer</li>
+			<li> Each of 3 VMs runs a pw_breaker.js
+			process</li>
+			<li> VM_3 sends requests to VM_1 load
+			balancer</li></ul>
+			The request is timeouted (no response in 30s)
+			when the frequency reaches 49
+			req/ min.
+
+			
+<br><br>
+
+
+								<p>Deployment 4.</p>
+				
+<p>From data collected in the previous deployements:</p>
+<p>
+<ul>
+<li> Frequency reaches 1 req/ 3 sec -> start the 2nd VM.</li>
+<li>Frequency reaches 1 req/ 1.5 sec -> start the 3rd VM.</li>
+<li>Similarly, if we have 3 machines and the requests come more seldom than 1 req/ 1.5 sec, we
+would delete one machine.</li>
+<li> If requests come more seldom than 1 req / 3 sec and we have two machines up, we would
+delete the 2nd machine and leave only one serving all the requests.</li>
+	</ul>
+	</p>
+	<p>
+Additional machines are booted and deleted automatically using a Python script written using python-
+novaclient (OpenStack API). Newly booted machines run an upstart task, which runs a node.js script.
+This script reports to the main server (one instance that is always online) its IP address. Additionally,
+they start the pw_breaker script on boot, as well. To “catch” all these IP addresses coming from new
+machines, always-on instance runs a restful service. This server shares this information with the load
+balancer, so that it could hand the requests to newly booted servers.
+Limitation: Though this scenario seems reasonable, in practice it takes minutes to boot new machines.
+So the burst of requests might end at the time when the new machines are booted. Also, sometimes
+the server would delete instances that still serve clients.
+</p>
+		
+
+		
+		</div>
+	</div>
+
+</div>

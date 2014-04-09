@@ -1,0 +1,72 @@
+<div class="title">
+    <h1>Experiment with Youtube Content Delivery Network</h1>
+
+    <p class="right">2013.11 - 2013.12 | Espoo, Finland</p>
+
+
+</div>
+
+		
+<div class="projectDetails">
+<p class="keywords">
+	Key words: CDN, Youtube
+
+</p>
+
+					<p>
+						Youtube is one of most popular video service websites that serves user-generated and other videos15
+.
+User with a Flash-enabled or HTML5-enabled browsers can watch those videos. Figure 8 illustrates
+a typical sequence of steps involved when a user watches a Youtube video. Basically, before being
+acquired and expanded by Google16, Youtube video delivery framework has 1 front-end data center
+in San Jose (US) and 7 video data centers (all of them are in US). The data centers operate as
+a content distribution network (CDN) in a way that the frontend web sersers will rewrite the host
+portion of the URL of the movie file in the response. As a result of that, for a specific movie, different
+users in different contexts will be redirected to different data centers. In case the the redirected data
+center does not have the requested file, Youtube CDN framework will utilize a proprietary protocol
+to allow that data center to retrieve and cache the content from other data centers. The CDN
+framework enhances the availability and performance of the Youtube service. </p>
+
+
+					
+<br>
+
+<p><b>Project goals:</b></p>
+
+<ul>
+<li>Examine the Youtube CDN from 4-5 different locations: university,
+home and three Amazon EC2 instances (Ireland, Singapore, California). For each geographical location, you will identify the content
+servers IP address corresponding to a certain number of predifined Youtube links (20).</li>
+
+<li>Upload videos from different locations, observe how a new content gets populated
+over the CDN</li>
+
+</ul>
+
+</p>
+
+
+
+
+
+<p><b>
+	
+	Tools and technology:
+
+</b></p>
+
+
+<ul>
+<li>Pytomo for crawling the destination IP information. </li>
+<li>Amazon EC2.</li>
+
+ 
+</ul>
+
+<p><b>
+	
+	Results:
+
+</b></p>
+Please check our <a href="img/projects/8/report.pdf">paper</a>.
+</div>

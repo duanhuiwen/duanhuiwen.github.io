@@ -3,10 +3,8 @@ var angularSite = angular.module('angularSite', [
   'ngRoute',
   'siteController',
   'siteDirectives'
-]);
- 
-angularSite.config(['$routeProvider',
-  function($routeProvider) {
+])
+.config(['$routeProvider', function($routeProvider) {
     $routeProvider.
 /*      when('/', {
         templateUrl: 'partials/main.html',        
@@ -18,11 +16,11 @@ angularSite.config(['$routeProvider',
       }).
       when('/Projects', {
         templateUrl: 'partials/projects.html',
-        controller: 'WorkController'
+        controller: 'ProjectController'
       }).
-      when('/Projects/:workName', {
-        templateUrl: 'partials/project-detail.html',
-        controller: 'WorkdetailController'
+      when('/Projects/:projectId', {
+        templateUrl: 'partials/urlRouter.html',
+        controller: 'ProjectDetailController'
       }).
       when('/Photography', {
         templateUrl: 'partials/photo.html',
