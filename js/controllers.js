@@ -59,15 +59,13 @@ siteController.controller('ProjectDetailController', ['$scope', '$http', '$route
 
 
 
-siteController.controller('WorkdetailController', ['$scope', '$routeParams',
-  function($scope, $routeParams) {
-    $scope.workName = $routeParams.workName;
-  }]);
+
 
 siteController.controller('PhotoController', ['$scope', '$http',
   function ($scope, $http) {
     $http.get('data/photos.json').success(function(data) {
       $scope.photos = data.photos;
+      console.log(data.photos.toString());
     });
  
 
