@@ -21,14 +21,14 @@ body {
     
 }
 div.img-wrap {
+    width:900px;
     display: table-cell;
     horizontal-align: middle;
     text-align: center;
 }
 
 img.detail{
-   margin-left: auto;
-    margin-right: auto;
+margin:2px auto;
 }
 .pure-img-responsive {
     max-width: 100%;
