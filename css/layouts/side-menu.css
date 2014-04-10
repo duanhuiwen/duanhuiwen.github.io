@@ -102,11 +102,12 @@ The content `<div>` is where all content goes.
      border-bottom: 1px solid #eee;
  }
  .title h1 {
-        margin: 2em 0;
+        margin: 2em 0 1em 0;
         line-height: 70%;
         font-size: 2em;
         font-weight: 500;
     }
+ 
 
 /*
 The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that

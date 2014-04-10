@@ -1,5 +1,111 @@
 <div class="title">
+    <h1>3D Relics</h1>
+    
+    <p class="right">2012.9 - 2013.3 | Espoo, Finland</p>
 
 </div>
+<p>Key word: Augmented reality, 3D, Android, Mobile Application</p>
+<p>3D Relics was a research project carried out by Media Engineering and Media degree programmes at 
+Metropolia University of Applied Sciences, with the purpose of showcasing 3D models of 
+historical sites to tourists as an augmentation of reality. To address the requirements, a 
+system consisting of a server side web application and an Android mobile application were 
+designed and implemented. 
+ 
+The web application was built on Amazon EC2 cloud, using Linux, MySQL, PHP and 
+Apache as a server environment. An admin site was created for user to upload 3D models, 
+and a web service was built using the principle of representation state transfer (REST) to 
+provide a public interface to outside world. The mobile application was developed on the 
+Android platform using Android SDK and Metaio SDK. It is a standalone Android 
+application capable of displaying AR content with no dependency to internet. 
+ 
+The results proved that a system of deploying 3D models through a web client and 
+displaying them as a form of augmented reality on an internet-disabled mobile client was 
+feasible. With the rapid growth of mobile computing power and accuracy of inertial 
+sensors, more features can be brought to the mobile client, such as location based 
+tracking. </p>
+<br><br>
+<p><b>
+	
+	Project architecture:
 
-<p>To be added...</p>
+</b></p>
+
+<div class="pure-g-r">
+		<div class="pure-u-1">
+			<p>The users groups of this project are mainly students and teachers of Media degree
+program in Metropolia and tourists, whose purposes of using the system are different
+from each other. The students and teachers at Metropolia want to deploy their 3D
+models of ancient times in a meaningful way, while the tourists want to gain more
+knowledge about the place they are visiting. The system was designed to have two
+parts, the server side web application which was developed by Carol Rodriguez Torres
+and mobile application, separating the user group from each other.</p>
+			<img src="./img/projects/6/1.png"></img>
+			<p class="project-title">Figure 1. System communication diagram</p>
+			<p>There are three components involved in this communication system, and they are
+interacting in the way shown in Figure above.</p>
+
+<ul>
+	<li>Server side:</li>
+</ul>
+<p>3.1
+The web application was deployed on Amazon ec2 cloud, using LAMP as a web server.
+It has a user interface for students and teachers to upload their 3D scenes and related
+information. All the files and information will be stored in the MySQL database and hard
+disk on the server. In order to support effective interaction between server and mobile
+phones, a web service is provided to the outside world.
+</p>
+<ul>
+	<li>Mobile client:</li>
+</ul>
+<p>
+By requesting the web service URL, the mobile application will receive a bundle of data
+which consists of all the information about the available scenes. After been properly
+handled, those data will be presented to tourists. Therefore, visitors can choose to
+download the scene(s) and launch it (them) at any time. Considering that the visitors12
+may be in lack of internet connection as they arrived at the historical spot, the
+augmentation functionality was also designed to be usable under non Wi-Fi or 3G-
+enabled situation. In other words, the mobile application can be a standalone
+application, as long as the models were downloaded beforehand.</p>
+<p>Figure 2 shows the agmented content rendering life cycle</p>
+<img src="./img/projects/6/4.png"></img>
+			<p>Figure 2. ARActivity rendering lifecycle.</p>
+<p>For more details, please refer to my <a href="http://www.theseus.fi/bitstream/handle/10024/59669/HuiwenDuan_Thesis.pdf?sequence=1">thesis</a> or <a href="https://github.com/duanhuiwen/test3DProject/tree/master/3DRelics">project source code</a>.</p>
+<br>
+<p><b>
+	
+	Results:
+
+</b></p>
+<p>
+	At the completion of this project, an integrated system has been established; two user
+groups were able to perform the desired functionalities through web application and
+mobile application. By developing 3D Relics, it was proved that the 3D models can be
+presented as an augmentation of the real world. The tracking and rendering results
+were satisfying. Apart from most of the AR application on the market, 3D Relics fulfilled
+the prime aim of this research project that is to display the AR contents under non-
+internet enabled situation. </p>
+<img src="./img/projects/6/2.png"></img>
+<p>
+The project followed the rapid application development methodology. The project
+started with the development of preliminary data models and business process models
+using structured techniques. In the next stage, requirements were verified using
+prototyping, eventually to refine the data and process models. These stages were
+repeated iteratively. By apply this methods, the mobile application structure has been
+improved several times when the developer found better solutions of optimizing the
+performance, and also the structure on the web client has been modified to provide the
+desired data for mobile client.</p><p>
+The whole development process has consolidated the developer’s Android
+programming skills and brought the developer to a new level in understanding Android
+design pattern. The developer also come to know that develop an application for
+mobile platform is very different from other platforms, as the limited computing power
+and the screen size has put many constrains on the application. Thus to effectively
+pass information, the application should be taken care of at the design phase.
+Furthermore, it was an opportunity to explore a number of other fields, including
+computer graphics rendering flow, image processing, 3D modeling and mathematics.
+Most importantly, the developer has gained a more thorough comprehension in
+software development.
+
+
+</p>
+		</div>
+</div>
