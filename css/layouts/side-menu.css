@@ -20,6 +20,12 @@ body {
     color: #777;
     
 }
+div.img-wrap {
+    display: table-cell;
+    horizontal-align: middle;
+    text-align: center;
+}
+
 img.detail{
    margin-left: auto;
     margin-right: auto;
