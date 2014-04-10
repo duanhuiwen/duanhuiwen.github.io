@@ -328,13 +328,13 @@ a:link,
 a:visited,
 a:active {
     
-    color:  #777;
+     color:  #000;
 }
 
 
 a:hover {
-    
-    color:  #000;
+    color:  #777;
+   
 }
 
 
@@ -342,13 +342,14 @@ a:hover {
 .project-title a:visited,
 .project-title a:active {
     text-decoration: none;
-    
+    color:  #777;
 }
 
 
 .project-title a:hover {
     text-decoration: none;
-    
+     color:  #000;
+}
 }
 
 
