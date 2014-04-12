@@ -24,5 +24,25 @@
          "id": 6,
          "url":"img/photos/london.jpg"
       }
+      {
+         "id": 7,
+         "url":"img/photos/fish.jpg"
+      }
+      {
+         "id": 8,
+         "url":"img/photos/wanke.jpg"
+      }
+      {
+         "id": 9,
+         "url":"img/photos/oil.jpg"
+      }
+      {
+         "id": 10,
+         "url":"img/photos/usa.jpg"
+      }
+      {
+         "id": 11,
+         "url":"img/photos/jelly.jpg"
+      }
    ]
 }
