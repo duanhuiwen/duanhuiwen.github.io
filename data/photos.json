@@ -38,6 +38,10 @@
       },
       {
          "id": 10,
+         "url":"img/photos/gala.jpg"
+      }
+      {
+         "id": 1000,
          "url":"img/photos/usa.jpg"
       }
    ]
