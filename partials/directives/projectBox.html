@@ -7,3 +7,13 @@
 <p class="project-title"><a ng-href="#/Projects/{{project.id}}">{{project.shortName}}</a></p>
 <!-- </div> -->
 
+
+<script type="text/javascript">
+$(function(){
+    $('.image-list').each(function() {
+        $(this).load(function(){
+            $(this).fadeIn("slow");
+        });
+    });
+})
+</script>
