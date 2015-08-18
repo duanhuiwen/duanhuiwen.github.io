@@ -41,8 +41,29 @@
          "url":"img/photos/gala.jpg"
       },
       {
-         "id": 1000,
+         "id": 11,
+         "url":"img/photos/lucia2014.jpg"
+      }
+      {
+         "id": 12,
+         "url":"img/photos/familia.jpg"
+      }
+      {
+         "id": 13,
          "url":"img/photos/usa.jpg"
       }
+      {
+         "id": 14,
+         "url":"img/photos/icylake.jpg"
+      }
+      {
+         "id": 15,
+         "url":"img/photos/headsup.jpg"
+      }
+      {
+         "id": 16,
+         "url":"img/photos/barcelona.jpg"
+      }
+
    ]
 }
